@@ -400,7 +400,7 @@ jobs:
   deploy:
     name: Deploy documentation for gh-pages
     needs: stage-and-check
-    if: github.event_name == 'push'
+    if: always()
     runs-on: ubuntu-latest
 
     permissions:
